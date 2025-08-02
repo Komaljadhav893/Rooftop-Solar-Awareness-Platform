@@ -1,0 +1,285 @@
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);  
+  z-index: -1;
+  /* background-image: url("https://sdmntprnortheu.oaiusercontent.com/files/00000000-6a60-61f4-816d-92c010348af7/raw?se=2025-08-01T12%3A28%3A55Z&sp=r&sv=2024-08-04&sr=b&scid=77a7777d-a450-5a20-bbc9-bf65c5fb0f51&skoid=0da8417a-a4c3-4a19-9b05-b82cee9d8868&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-08-01T11%3A23%3A29Z&ske=2025-08-02T11%3A23%3A29Z&sks=b&skv=2024-08-04&sig=chsWqgSobIF3HqOuY3ChmORse73Me/GH8PEvtL3ekVs%3D");
+  background-repeat: no-repeat;
+  background-size: cover;       /* Covers full screen */
+  background-position: center;  /* Centers the image */
+  background-attachment: fixed; 
+  
+}
+
+
+.container{
+    top: 20px;
+    height: 100vh;
+    width: 100%;
+     /* background-image: url("https://th.bing.com/th/id/OIP.9qgVSEbgjJHBzXSyZgToWwHaE8?w=235&h=150&c=6&o=7&dpr=1.3&pid=1.7&rm=3"); */
+    background-position: center;
+    position: relative;
+    /* background-size: cover;
+    background-size: cover;        /* Scales image to cover entire screen */
+  background-position: center;   /* Keeps image centered */
+  background-repeat: no-repeat;  /* Prevents tiling */
+  background-attachment: fixed; 
+}
+.form-box {
+  width: 500px; /* Set a fixed wider width */
+  height: 400px; /* Set a fixed taller height */
+  background-color: whitesmoke;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  padding: 60px; /* You can adjust padding if needed */
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Optional for nice shadow */
+  border-radius: 10px; /* Optional for smooth corners */
+}
+.form-box h1{
+    font-size: 50px;
+    position: relative;
+    margin-bottom: 60px;
+}
+.form-box h1::after{
+    content: " ";
+    height: 5px;
+    width: 50px;
+    background: black;
+    bottom: -12px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+.input-field{
+    background: rgba(128, 128, 128, 0.273);
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    max-height: 65px;
+    transition: max-height 1s;
+    overflow: hidden;
+}
+input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+    color: black;
+   
+}
+.input-field i{
+    margin-left: 15px;
+    color: #9999;
+}
+.btn-field{
+    width: 100%;
+    justify-content: space-between;
+}
+.btn-field button{
+    flex-basis: 48%;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    transition: background 1s;
+    background: rgb(60, 128, 0);
+    color: #fff;
+    height: 40px;
+    width: 100px;
+
+}
+
+.navi {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 40px; /* Reduced vertical padding */
+  background: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo img {
+  height: 30px; /* Smaller logo height */
+  width: 50px;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-buttons button {
+  background: none;
+  border: none;
+  color: #333;
+  font-size: 16px;
+  font-family: 'Segoe UI', sans-serif;
+  cursor: pointer;
+  padding: 6px 12px; /* Less padding */
+  border-radius: 4px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.nav-buttons button:hover {
+  background: #ffe5b4;
+  color: #d98200;
+}
+
+.product-section {
+  padding: 40px;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.product-section h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.product-card {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.product-card h3 {
+  margin: 15px 0 10px;
+  color: #2c3e50;
+}
+
+.product-card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.product-card ul {
+  text-align: left;
+  list-style: none;
+  padding-left: 0;
+}
+
+.product-card ul li {
+  font-size: 0.9rem;
+  margin: 5px 0;
+}
+
+#Company {
+  padding: 50px 30px;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.7;
+}
+
+#Company h2 {
+  font-size: 2.2em;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  text-align: center;
+}
+
+#Company h3 {
+  color: #2575fc;
+  margin-top: 30px;
+}
+
+#Company ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+#Company p {
+  font-size: 1rem;
+  max-width: 900px;
+  margin: 0 auto 20px;
+  text-align: justify;
+}
+
+.feedback-section {
+  background-color: #f9f9f9;
+  padding: 50px 30px;
+  text-align: center;
+}
+
+.feedback-section h3 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.feedback-section p {
+  font-size: 1rem;
+  margin-bottom: 25px;
+  color: #444;
+}
+
+.feedback-form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.feedback-form button {
+  padding: 12px;
+  background-color: #2575fc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.feedback-form button:hover {
+  background-color: #1a5edc;
+}
+
+.response-message {
+  margin-top: 10px;
+  color: green;
+  font-weight: 500;
+}
